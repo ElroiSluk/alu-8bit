@@ -4,11 +4,11 @@ module alu_8bit (
   input  logic [7:0] a, b,
   input  logic [2:0] op,
   output logic [7:0] result,
-  output logic       carry, zero
+  output logic carry, zero
 );
 
-  // ADD and SUB share one adder: a - b = a + ~b + 1
-  logic       sub;
+  // ADD and SUB can be implemented with one adder: a - b = a + ~b + 1
+  logic sub;
   logic [7:0] b_in;
   logic [8:0] sum;
 
