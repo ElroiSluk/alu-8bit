@@ -51,6 +51,6 @@ Checks run: 524294
 To make sure the testbench can actually detect bugs, I broke the design on purpose (replacing AND with OR) and confirmed that it reports `TEST FAILED`.
 
 ### Waveform
-Simulated with **Icarus Verilog** on EDA Playground and reviewed in **EPWave**. The waveform shows the six corner cases (the full sweep is not dumped, to keep the file small). From left to right: 200 + 100, 255 + 1, 0 - 1, 77 - 77, NOT 255, and 0x80 << 1. The carry and zero flags switch on and off as specified.
+Simulated with **Icarus Verilog** on EDA Playground and reviewed in **EPWave**. The waveform shows the six corner cases (the full sweep is not dumped, to keep the file small).  
 
 ![ALU corner-case waveform](docs/waveform.png)
