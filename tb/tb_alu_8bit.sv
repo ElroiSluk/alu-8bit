@@ -10,12 +10,12 @@ module tb;
   int checks = 0;
 
   alu_8bit dut (
-    .a      (a),
-    .b      (b),
-    .op     (op),
+    .a (a),
+    .b (b),
+    .op (op),
     .result (result),
-    .carry  (carry),
-    .zero   (zero)
+    .carry (carry),
+    .zero (zero)
   );
 
   
